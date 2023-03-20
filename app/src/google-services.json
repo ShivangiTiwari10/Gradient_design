@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "943881389733",
+    "project_id": "signin-d171d",
+    "storage_bucket": "signin-d171d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943881389733:android:09b3b502cd788a3412af4c",
+        "android_client_info": {
+          "package_name": "com.example.gradientdesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943881389733-gojlhc981rhur97budqk6lasi8e3be91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASi9HSnn47YnD6TY2zTftzDx6-pj43By8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943881389733-gojlhc981rhur97budqk6lasi8e3be91.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
