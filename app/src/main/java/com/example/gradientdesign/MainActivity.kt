@@ -54,7 +54,8 @@ class MainActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, passward).addOnCompleteListener {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully Singed Up", Toast.LENGTH_SHORT).show()
-                finish()
+                val intent = Intent(this, AdvanceRegisterScreen::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, it.exception.toString(), Toast.LENGTH_LONG).show()
             }
