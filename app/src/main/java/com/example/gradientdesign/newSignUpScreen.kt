@@ -2,6 +2,7 @@ package com.example.gradientdesign
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.gradientdesign.databinding.ActivityNewSignUpScreenBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -25,7 +26,13 @@ class newSignUpScreen : AppCompatActivity() {
 
             val user = User(name, email, password, uniqueId)
             database = FirebaseDatabase.getInstance().getReference("Users")
-            database.child(uniqueId).setValue(user)
+            database.child(uniqueId).setValue(user).addOnSuccessListener {
+
+                Toast.makeText(this, "User logged In", Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener {
+                Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
+
+            }
         }
     }
 }
