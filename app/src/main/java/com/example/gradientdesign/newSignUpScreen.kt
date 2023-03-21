@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.gradientdesign.databinding.ActivityNewSignUpScreenBinding
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class newSignUpScreen : AppCompatActivity() {
     lateinit var database: DatabaseReference
@@ -21,6 +22,8 @@ class newSignUpScreen : AppCompatActivity() {
             val email = binding.etEmail.text
             val password = binding.etPassward.text
             val uniqueId = binding.etUniqeId.text
+
+            database = FirebaseDatabase.getInstance().getReference("Users")
         }
     }
 }
