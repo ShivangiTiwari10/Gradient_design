@@ -18,10 +18,10 @@ class newSignUpScreen : AppCompatActivity() {
 
 
         binding.materialButton.setOnClickListener {
-            val name = binding.etName.text
-            val email = binding.etEmail.text
-            val password = binding.etPassward.text
-            val uniqueId = binding.etUniqeId.text
+            val name = binding.etName.text.toString()
+            val email = binding.etEmail.text.toString()
+            val password = binding.etPassward.text.toString()
+            val uniqueId = binding.etUniqeId.text.toString()
 
             database = FirebaseDatabase.getInstance().getReference("Users")
         }
