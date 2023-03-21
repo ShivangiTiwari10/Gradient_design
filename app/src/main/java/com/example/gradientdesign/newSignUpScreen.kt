@@ -3,8 +3,10 @@ package com.example.gradientdesign
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.gradientdesign.databinding.ActivityNewSignUpScreenBinding
+import com.google.firebase.database.DatabaseReference
 
 class newSignUpScreen : AppCompatActivity() {
+    lateinit var database: DatabaseReference
 
     private lateinit var binding: ActivityNewSignUpScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
