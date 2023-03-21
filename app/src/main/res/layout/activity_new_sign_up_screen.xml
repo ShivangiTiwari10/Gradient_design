@@ -69,7 +69,9 @@
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
-      app:startIconDrawable="@drawable/ic_baseline_person_24">
+      app:startIconDrawable="@drawable/ic_baseline_lock_24"
+      app:endIconMode="password_toggle"
+      >
 
 
     <com.google.android.material.textfield.TextInputEditText
