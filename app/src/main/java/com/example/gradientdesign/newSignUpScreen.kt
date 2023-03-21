@@ -23,7 +23,9 @@ class newSignUpScreen : AppCompatActivity() {
             val password = binding.etPassward.text.toString()
             val uniqueId = binding.etUniqeId.text.toString()
 
+            val user = User(name, email, password, uniqueId)
             database = FirebaseDatabase.getInstance().getReference("Users")
+            database.child(uniqueId).setValue(user)
         }
     }
 }
