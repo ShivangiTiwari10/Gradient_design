@@ -8,4 +8,8 @@
     <string name="conferm">ConfirmPassword</string>
     <string name="don_t_have_an_account_sign_in">Dont have an account</string>
     <string name="login">Login</string>
+    <string name="enter_your_email_adress">Enter your email adress</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_your_passward">Enter your Passward</string>
+    <string name="enter_uniqe_id">Enter uniqe id</string>
 </resources>
