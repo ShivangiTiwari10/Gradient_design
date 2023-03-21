@@ -24,6 +24,9 @@ class newSignUpScreen : AppCompatActivity() {
             val password = binding.etPassward.text.toString()
             val uniqueId = binding.etUniqeId.text.toString()
 
+            if (name.isEmpty() || email.isEmpty() || password.isEmpty() || uniqueId.isEmpty()){
+                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+            }
             val user = User(name, email, password, uniqueId)
             database = FirebaseDatabase.getInstance().getReference("Users")
             database.child(uniqueId).setValue(user).addOnSuccessListener {
