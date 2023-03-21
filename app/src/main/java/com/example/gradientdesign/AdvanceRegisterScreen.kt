@@ -21,6 +21,9 @@ class AdvanceRegisterScreen : AppCompatActivity() {
 
         binding.btnLogin.setOnClickListener {
             login()
+            finish()
+            val intent = Intent(this,newSignUpScreen::class.java)
+            startActivity(intent)
         }
 
         binding.tvRedirectSignUp.setOnClickListener {
