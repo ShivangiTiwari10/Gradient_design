@@ -12,5 +12,13 @@ class newSignUpScreen : AppCompatActivity() {
 
         binding = ActivityNewSignUpScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        binding.materialButton.setOnClickListener {
+            val name = binding.etName.text
+            val email = binding.etEmail.text
+            val password = binding.etPassward.text
+            val uniqueId = binding.etUniqeId.text
+        }
     }
 }
