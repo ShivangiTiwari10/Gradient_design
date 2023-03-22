@@ -1,5 +1,6 @@
 package com.example.gradientdesign
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -35,6 +36,9 @@ class newSignUpScreen : AppCompatActivity() {
                     binding.etEmail.text?.clear()
                     binding.etPassward.text?.clear()
                     binding.etUniqeId.text?.clear()
+
+                    val intent = Intent(this, SignInActivity::class.java)
+                    startActivity(intent)
 
                     Toast.makeText(this, "User logged In", Toast.LENGTH_SHORT).show()
                 }.addOnFailureListener {
