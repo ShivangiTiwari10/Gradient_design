@@ -18,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_uniqe_id"
@@ -26,11 +27,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="248dp"
         android:backgroundTint="#A30CDA"
-        android:text="SignIn"
+        android:text="@string/signin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
         app:layout_constraintHorizontal_bias="0.496"

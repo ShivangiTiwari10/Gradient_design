@@ -12,4 +12,5 @@
     <string name="enter_your_name">Enter your Name</string>
     <string name="enter_your_passward">Enter your Passward</string>
     <string name="enter_uniqe_id">Enter uniqe id</string>
+    <string name="signin">SignIn</string>
 </resources>
