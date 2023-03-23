@@ -21,9 +21,7 @@ class AdvanceRegisterScreen : AppCompatActivity() {
 
         binding.btnLogin.setOnClickListener {
             login()
-            finish()
-            val intent = Intent(this,newSignUpScreen::class.java)
-            startActivity(intent)
+
         }
 
         binding.tvRedirectSignUp.setOnClickListener {
@@ -39,7 +37,10 @@ class AdvanceRegisterScreen : AppCompatActivity() {
         val pass = binding.etPassword.text.toString()
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Successfully LoggedIn also see new-signup", Toast.LENGTH_SHORT).show()
+
+                val intent = Intent(this,newSignUpScreen::class.java)
+                startActivity(intent)
             } else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
