@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             signUpUser()
         }
         binding.tvRedirectLogin.setOnClickListener {
-            val intent = Intent(this, AdvanceRegisterScreen::class.java)
+            val intent = Intent(this, LoginScreen::class.java)
             startActivity(intent)
         }
 
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, passward).addOnCompleteListener {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully Singed Up", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, AdvanceRegisterScreen::class.java)
+                val intent = Intent(this, LoginScreen::class.java)
                 startActivity(intent)
             } else {
                 Toast.makeText(this, it.exception.toString(), Toast.LENGTH_LONG).show()
