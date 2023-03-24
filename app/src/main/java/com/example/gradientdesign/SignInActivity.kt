@@ -13,9 +13,9 @@ class SignInActivity : AppCompatActivity() {
     lateinit var database: DatabaseReference
 
     companion object {
-        const val KEY1 = "com.example.gradientdesign.SignInActivity.email"
-        const val KEY2 = "com.example.day16database.SignInActivity.name"
-        const val KEY3 = "com.example.day16database.SignInActivity.uniqueId"
+        const val KEY1 = "com.example.gradient design.SignInActivity.email"
+        const val KEY2 = "com.example.gradient design.SignInActivity.name"
+        const val KEY3 = "com.example.gradient design.SignInActivity.uniqueId"
     }
 
 
@@ -42,8 +42,8 @@ class SignInActivity : AppCompatActivity() {
 
             if (it.exists()) {
 
-                val email = it.child("name").value
-                val name = it.child("email").value
+                val email = it.child("email").value
+                val name = it.child("name").value
                 val userId = it.child("uniqueId").value
 
 
