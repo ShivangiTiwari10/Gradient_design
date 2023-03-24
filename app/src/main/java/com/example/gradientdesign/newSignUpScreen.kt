@@ -31,6 +31,7 @@ class newSignUpScreen : AppCompatActivity() {
                 val user = User(name, email, password, uniqueId)
                 database = FirebaseDatabase.getInstance().getReference("Users")
                 database.child(uniqueId).setValue(user).addOnSuccessListener {
+                    Toast.makeText(this, "User logged In", Toast.LENGTH_SHORT).show()
 
                     binding.etName.text?.clear()
                     binding.etEmail.text?.clear()
@@ -40,7 +41,6 @@ class newSignUpScreen : AppCompatActivity() {
                     val intent = Intent(this, SignInActivity::class.java)
                     startActivity(intent)
 
-                    Toast.makeText(this, "User logged In", Toast.LENGTH_SHORT).show()
                 }.addOnFailureListener {
                     Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
 
