@@ -13,4 +13,6 @@
     <string name="enter_your_passward">Enter your Passward</string>
     <string name="enter_uniqe_id">Enter uniqe id</string>
     <string name="signin">SignIn</string>
+    <string name="uniqueid">UniqueId</string>
+    <string name="mail">Mail</string>
 </resources>
