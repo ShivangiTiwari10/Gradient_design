@@ -47,7 +47,7 @@ class SignInActivity : AppCompatActivity() {
                 val userId = it.child("uniqueId").value
 
 
-                val advanced = Intent(this, AdvanceRegisterScreen::class.java)
+                val advanced = Intent(this, WelcomeActivity::class.java)
                 advanced.putExtra(KEY1, email.toString())
                 advanced.putExtra(KEY2, name.toString())
                 advanced.putExtra(KEY3, userId.toString())
