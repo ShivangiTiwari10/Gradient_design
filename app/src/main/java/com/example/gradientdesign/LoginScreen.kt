@@ -4,16 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.gradientdesign.databinding.ActivityAdvanceRegisterScreenBinding
+import com.example.gradientdesign.databinding.LoginScreenBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class AdvanceRegisterScreen : AppCompatActivity() {
+class LoginScreen : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-    private lateinit var binding: ActivityAdvanceRegisterScreenBinding
+    private lateinit var binding: LoginScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityAdvanceRegisterScreenBinding.inflate(layoutInflater)
+        binding = LoginScreenBinding.inflate(layoutInflater)
 
         auth = FirebaseAuth.getInstance()
 

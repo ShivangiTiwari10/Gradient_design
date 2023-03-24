@@ -34,7 +34,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".AdvanceRegisterScreen"
+            android:name=".LoginScreen"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
