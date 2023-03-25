@@ -1,6 +1,8 @@
 package com.example.gradientdesign
 
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -26,6 +28,7 @@ class SignInActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnSignIn.setOnClickListener {
+
             val uniqueId = binding.enterId.text.toString()
             if (uniqueId.isNotEmpty()) {
                 getData(uniqueId)
@@ -40,6 +43,14 @@ class SignInActivity : AppCompatActivity() {
 
         database.child(uniqueId).get().addOnSuccessListener {
 
+
+            if (binding.checkbox.isChecked) {
+                Toast.makeText(this, "u accepted term and condition", Toast.LENGTH_SHORT).show()
+
+            } else {
+                Toast.makeText(this, "Please accept term and condition", Toast.LENGTH_SHORT).show()
+                binding.checkbox.buttonTintList = ColorStateList.valueOf(Color.RED)
+            }
             if (it.exists()) {
 
                 val email = it.child("email").value
