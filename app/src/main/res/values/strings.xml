@@ -8,11 +8,12 @@
     <string name="conferm">ConfirmPassword</string>
     <string name="don_t_have_an_account_sign_in">Dont have an account</string>
     <string name="login">Login</string>
-    <string name="enter_your_email_adress">Enter your email adress</string>
+    <string name="enter_your_email_adress">Enter your email address</string>
     <string name="enter_your_name">Enter your Name</string>
-    <string name="enter_your_passward">Enter your Passward</string>
+    <string name="enter_your_passward">Enter your Password</string>
     <string name="enter_uniqe_id">Enter uniqe id</string>
     <string name="signin">SignIn</string>
     <string name="uniqueid">UniqueId</string>
     <string name="mail">Mail</string>
+    <string name="i_accept_all_terms_amp_condition"><![CDATA[I accept all terms&condition]]></string>
 </resources>
